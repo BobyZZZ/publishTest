@@ -1,7 +1,9 @@
 package com.example.helloworld
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.bb.mylibrary.test
 import com.example.helloworld.databinding.ActivityMainBinding
 
@@ -16,3 +18,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+fun testFromApp(context: Context) = Toast.makeText(context,"toast from TestLib", Toast.LENGTH_SHORT).show()
